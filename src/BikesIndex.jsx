@@ -1,7 +1,9 @@
+import { QuiltedImageList } from "./QuiltedImageList";
+
 export function BikesIndex(props) {
   return (
     <div>
-      <h1>5 Stunning Gravel Bikes for the Fall Season</h1>
+      <h1 className="title">5 Stunning Gravel Bikes for the Fall Season</h1>
       <p>
         Fall brings forth a litany of changes to our lives. The summer shorts get swapped out with the denim jeans,
         fresh lemonade replaced by ciders, and water sports are swapped with hitting the trails and admiring the
@@ -9,6 +11,7 @@ export function BikesIndex(props) {
         transitions from street to riverside paths. I know, bikes can be a relatively costly investment, so let's have a
         peak at 5 gravel bikes for various budgets.
       </p>
+      <QuiltedImageList />
       {props.bikes.map((bike) => (
         <div key={bike.id}>
           <h2>{bike.model}</h2>
