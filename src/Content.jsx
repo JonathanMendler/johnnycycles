@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { BikesIndex } from "./BikesIndex";
-import { QuiltedImageList } from "./QuiltedImageList";
 
 export function Content() {
   const [bikes, setBikes] = useState([]);
