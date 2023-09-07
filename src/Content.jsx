@@ -16,7 +16,7 @@ export function Content() {
   useEffect(handleIndexBikes, []);
 
   return (
-    <div className="body">
+    <div className="bicycle">
       <BikesIndex bikes={bikes} />
     </div>
   );
